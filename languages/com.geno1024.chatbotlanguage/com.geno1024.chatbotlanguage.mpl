@@ -24,6 +24,10 @@
         </facet>
       </facets>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">7f6543be-9f2f-4d8f-bb8a-a32060be4ff5(com.geno1024.chatbotlanguage.runtime)</dependency>
+      </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -50,6 +54,7 @@
         <module reference="a5f02752-dbdb-4660-84f6-2744418db717(com.geno1024.chatbotlanguage)" version="0" />
         <module reference="39e27799-2b72-42e4-8005-ba94dfaa5cbe(com.geno1024.chatbotlanguage.generator)" version="0" />
         <module reference="7f6543be-9f2f-4d8f-bb8a-a32060be4ff5(com.geno1024.chatbotlanguage.runtime)" version="0" />
+        <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
@@ -95,12 +100,15 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="a5f02752-dbdb-4660-84f6-2744418db717(com.geno1024.chatbotlanguage)" version="0" />
+    <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">7f6543be-9f2f-4d8f-bb8a-a32060be4ff5(com.geno1024.chatbotlanguage.runtime)</dependency>
   </runtime>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</extendedLanguage>
+  </extendedLanguages>
 </language>
 
