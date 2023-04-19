@@ -12,11 +12,15 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -32,6 +36,8 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -50,8 +56,46 @@
         </node>
         <node concept="2iRfu4" id="ktqxccT3OO" role="2iSdaV" />
       </node>
-      <node concept="3F0ifn" id="ktqxccT3P5" role="3EZMnx" />
+      <node concept="3F0ifn" id="2OWe1DIUGrA" role="3EZMnx" />
+      <node concept="3F0ifn" id="2OWe1DIUGt0" role="3EZMnx">
+        <property role="3F0ifm" value="Logins:" />
+      </node>
+      <node concept="3EZMnI" id="2OWe1DIUDDt" role="3EZMnx">
+        <node concept="3XFhqQ" id="2OWe1DIUDDL" role="3EZMnx" />
+        <node concept="2iRfu4" id="2OWe1DIUDDu" role="2iSdaV" />
+        <node concept="3F2HdR" id="2OWe1DIUx71" role="3EZMnx">
+          <ref role="1NtTu8" to="45me:2OWe1DIUx6Y" resolve="logins" />
+          <node concept="2EHx9g" id="2OWe1DIUx7b" role="2czzBx" />
+        </node>
+        <node concept="VPM3Z" id="2OWe1DIUDDE" role="3F10Kt" />
+      </node>
       <node concept="2iRkQZ" id="ktqxccT3OA" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2OWe1DIUwTN">
+    <ref role="1XX52x" to="45me:2OWe1DIFhTM" resolve="Login" />
+    <node concept="3EZMnI" id="2OWe1DIUwTP" role="2wV5jI">
+      <node concept="3EZMnI" id="2OWe1DIUwWy" role="3EZMnx">
+        <node concept="VPM3Z" id="2OWe1DIUwW$" role="3F10Kt" />
+        <node concept="3F0ifn" id="2OWe1DIUwWA" role="3EZMnx">
+          <property role="3F0ifm" value="Username:" />
+        </node>
+        <node concept="3F0A7n" id="2OWe1DIUx07" role="3EZMnx">
+          <ref role="1NtTu8" to="45me:2OWe1DIFhTN" resolve="username" />
+        </node>
+        <node concept="2iRfu4" id="2OWe1DIUwWB" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="2OWe1DIUx1z" role="3EZMnx">
+        <node concept="VPM3Z" id="2OWe1DIUx1_" role="3F10Kt" />
+        <node concept="3F0ifn" id="2OWe1DIUx1B" role="3EZMnx">
+          <property role="3F0ifm" value="Password:" />
+        </node>
+        <node concept="3F0A7n" id="2OWe1DIUx5d" role="3EZMnx">
+          <ref role="1NtTu8" to="45me:2OWe1DIUul5" resolve="password" />
+        </node>
+        <node concept="2iRfu4" id="2OWe1DIUx1C" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="2OWe1DIUwTS" role="2iSdaV" />
     </node>
   </node>
 </model>
