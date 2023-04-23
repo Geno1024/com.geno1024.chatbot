@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e2d881ce-7a45-46d0-9734-ce4ef99a6927(com.geno1024.chatbotlanguage.qq.generator.templates@generator)">
+<model ref="r:e2d881ce-7a45-46d0-9734-ce4ef99a6927(com.geno1024.chatbotlanguage.mirai.generator.templates@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="gq9s" ref="r:d642382b-afe5-4a61-8e09-f3963e3b48dc(com.geno1024.chatbotlanguage.qq.structure)" />
+    <import index="gq9s" ref="r:d642382b-afe5-4a61-8e09-f3963e3b48dc(com.geno1024.chatbotlanguage.mirai.structure)" />
     <import index="4oku" ref="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf/java:net.mamoe.mirai(com.geno1024.chatbotlanguage.qq.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="45me" ref="r:9515e522-8dbe-447f-9352-ed239871d408(com.geno1024.chatbotlanguage.structure)" implicit="true" />

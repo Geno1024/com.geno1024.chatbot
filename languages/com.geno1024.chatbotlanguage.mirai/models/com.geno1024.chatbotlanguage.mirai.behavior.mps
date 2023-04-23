@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a44fc61a-80ea-465b-a198-cf2c082f605e(com.geno1024.chatbotlanguage.qq.behavior)">
+<model ref="r:a44fc61a-80ea-465b-a198-cf2c082f605e(com.geno1024.chatbotlanguage.mirai.behavior)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />

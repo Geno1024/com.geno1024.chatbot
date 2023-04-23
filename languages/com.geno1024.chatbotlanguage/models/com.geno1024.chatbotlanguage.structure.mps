@@ -67,7 +67,12 @@
     <property role="EcuMT" value="3259541916486540914" />
     <property role="TrG5h" value="Login" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7kzKH48hc6m" role="1TKVEl">
+      <property role="IQ2nx" value="8440804329665118614" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="2OWe1DIFhTN" role="1TKVEl">
       <property role="IQ2nx" value="3259541916486540915" />
       <property role="TrG5h" value="username" />

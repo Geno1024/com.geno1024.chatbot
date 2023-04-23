@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.geno1024.chatbotlanguage.qq" uuid="9f86a1d1-1035-47e5-a2e9-4600c1c734bd" languageVersion="0" moduleVersion="0">
+<language namespace="com.geno1024.chatbotlanguage.mirai" uuid="9f86a1d1-1035-47e5-a2e9-4600c1c734bd" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
@@ -12,7 +12,7 @@
   </facets>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="com.geno1024.chatbotlanguage.qq.generator" uuid="ea8a6c48-8afb-436d-ac09-37b0a839c065">
+    <generator alias="main" namespace="com.geno1024.chatbotlanguage.mirai.generator" uuid="ea8a6c48-8afb-436d-ac09-37b0a839c065">
       <models>
         <modelRoot type="default" contentPath="${module}/generator">
           <sourceRoot location="templates" />
@@ -48,9 +48,9 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="a5f02752-dbdb-4660-84f6-2744418db717(com.geno1024.chatbotlanguage)" version="0" />
-        <module reference="9f86a1d1-1035-47e5-a2e9-4600c1c734bd(com.geno1024.chatbotlanguage.qq)" version="0" />
-        <module reference="ea8a6c48-8afb-436d-ac09-37b0a839c065(com.geno1024.chatbotlanguage.qq.generator)" version="0" />
-        <module reference="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf(com.geno1024.chatbotlanguage.qq.runtime)" version="0" />
+        <module reference="9f86a1d1-1035-47e5-a2e9-4600c1c734bd(com.geno1024.chatbotlanguage.mirai)" version="0" />
+        <module reference="ea8a6c48-8afb-436d-ac09-37b0a839c065(com.geno1024.chatbotlanguage.mirai.generator)" version="0" />
+        <module reference="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf(com.geno1024.chatbotlanguage.mirai.runtime)" version="0" />
         <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
@@ -100,7 +100,7 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="a5f02752-dbdb-4660-84f6-2744418db717(com.geno1024.chatbotlanguage)" version="0" />
-    <module reference="9f86a1d1-1035-47e5-a2e9-4600c1c734bd(com.geno1024.chatbotlanguage.qq)" version="0" />
+    <module reference="9f86a1d1-1035-47e5-a2e9-4600c1c734bd(com.geno1024.chatbotlanguage.mirai)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
     <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
@@ -110,7 +110,7 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
   <runtime>
-    <dependency reexport="false">b7cb73b2-bbd8-4833-a953-ee292cb1a8cf(com.geno1024.chatbotlanguage.qq.runtime)</dependency>
+    <dependency reexport="false">b7cb73b2-bbd8-4833-a953-ee292cb1a8cf(com.geno1024.chatbotlanguage.mirai.runtime)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>a5f02752-dbdb-4660-84f6-2744418db717(com.geno1024.chatbotlanguage)</extendedLanguage>

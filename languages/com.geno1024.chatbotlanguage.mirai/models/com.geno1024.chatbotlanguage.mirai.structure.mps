@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:d642382b-afe5-4a61-8e09-f3963e3b48dc(com.geno1024.chatbotlanguage.qq.structure)">
+<model ref="r:d642382b-afe5-4a61-8e09-f3963e3b48dc(com.geno1024.chatbotlanguage.mirai.structure)">
   <persistence version="9" />
   <languages>
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.geno1024.chatbotlanguage.qq.runtime" uuid="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf" moduleVersion="0" compileInMPS="true">
+<solution name="com.geno1024.chatbotlanguage.mirai.runtime" uuid="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
@@ -31,7 +31,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf(com.geno1024.chatbotlanguage.qq.runtime)" version="0" />
+    <module reference="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf(com.geno1024.chatbotlanguage.mirai.runtime)" version="0" />
     <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
     <module reference="6b3888c1-9802-44d8-8baf-f8e6c33ed689(jetbrains.mps.kotlin)" version="1" />
     <module reference="9e4ff22b-60f1-43ef-a50b-f9f0fcec22e0(jetbrains.mps.kotlin.javaRefs)" version="1" />

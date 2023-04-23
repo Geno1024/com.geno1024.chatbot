@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7910c290-ee4d-4703-991c-a6dc95819618(com.geno1024.chatbotlanguage.qq.typesystem)">
+<model ref="r:7910c290-ee4d-4703-991c-a6dc95819618(com.geno1024.chatbotlanguage.mirai.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
