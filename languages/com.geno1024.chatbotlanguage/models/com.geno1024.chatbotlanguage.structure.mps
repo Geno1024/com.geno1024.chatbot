@@ -37,6 +37,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -46,6 +49,7 @@
     <property role="EcuMT" value="368567374567449576" />
     <property role="TrG5h" value="ChatFile" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="ktqxccT3Ot" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
@@ -60,14 +64,15 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="logins" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2OWe1DIFhTM" resolve="Login" />
+      <ref role="20lvS9" node="4Pv1lEELpY$" resolve="Login" />
     </node>
   </node>
   <node concept="1TIwiD" id="2OWe1DIFhTM">
     <property role="EcuMT" value="3259541916486540914" />
-    <property role="TrG5h" value="Login" />
+    <property role="TrG5h" value="LoginObj" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.rootobj" />
+    <ref role="1TJDcQ" node="4Pv1lEELpY$" resolve="Login" />
     <node concept="1TJgyi" id="7kzKH48hc6m" role="1TKVEl">
       <property role="IQ2nx" value="8440804329665118614" />
       <property role="TrG5h" value="type" />
@@ -83,6 +88,28 @@
       <property role="TrG5h" value="password" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="4Pv1lEELk5Z" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Pv1lEEKXiY">
+    <property role="EcuMT" value="5575180750678119614" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.rootref" />
+    <property role="TrG5h" value="LoginRef" />
+    <ref role="1TJDcQ" node="4Pv1lEELpY$" resolve="Login" />
+    <node concept="1TJgyj" id="4Pv1lEEKXiZ" role="1TKVEi">
+      <property role="IQ2ns" value="5575180750678119615" />
+      <property role="20kJfa" value="login" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2OWe1DIFhTM" resolve="LoginObj" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Pv1lEELpY$">
+    <property role="EcuMT" value="5575180750678237092" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage" />
+    <property role="TrG5h" value="Login" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
 </model>
 

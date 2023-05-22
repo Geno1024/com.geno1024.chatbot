@@ -24,6 +24,9 @@
         </facet>
       </facets>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">39e27799-2b72-42e4-8005-ba94dfaa5cbe(com.geno1024.chatbotlanguage.generator)</dependency>
+      </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -48,6 +51,7 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="a5f02752-dbdb-4660-84f6-2744418db717(com.geno1024.chatbotlanguage)" version="0" />
+        <module reference="39e27799-2b72-42e4-8005-ba94dfaa5cbe(com.geno1024.chatbotlanguage.generator)" version="0" />
         <module reference="9f86a1d1-1035-47e5-a2e9-4600c1c734bd(com.geno1024.chatbotlanguage.mirai)" version="0" />
         <module reference="ea8a6c48-8afb-436d-ac09-37b0a839c065(com.geno1024.chatbotlanguage.mirai.generator)" version="0" />
         <module reference="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf(com.geno1024.chatbotlanguage.mirai.runtime)" version="0" />

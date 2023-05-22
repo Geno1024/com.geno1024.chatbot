@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="45me" ref="r:9515e522-8dbe-447f-9352-ed239871d408(com.geno1024.chatbotlanguage.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -22,7 +23,12 @@
       </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -42,8 +48,14 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="ktqxccT3Ox">
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage" />
     <ref role="1XX52x" to="45me:ktqxccT2fC" resolve="ChatFile" />
     <node concept="3EZMnI" id="ktqxccT3Oz" role="2wV5jI">
       <node concept="3EZMnI" id="ktqxccT3OJ" role="3EZMnx">
@@ -73,12 +85,16 @@
     </node>
   </node>
   <node concept="24kQdi" id="2OWe1DIUwTN">
-    <ref role="1XX52x" to="45me:2OWe1DIFhTM" resolve="Login" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.rootobj" />
+    <ref role="1XX52x" to="45me:2OWe1DIFhTM" resolve="LoginObj" />
     <node concept="3EZMnI" id="2OWe1DIUwTP" role="2wV5jI">
       <node concept="3EZMnI" id="7kzKH48hiPi" role="3EZMnx">
         <node concept="VPM3Z" id="7kzKH48hiPk" role="3F10Kt" />
         <node concept="3F0A7n" id="7kzKH48hiQS" role="3EZMnx">
           <ref role="1NtTu8" to="45me:7kzKH48hc6m" resolve="type" />
+        </node>
+        <node concept="3F0A7n" id="4Pv1lEELk62" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="3XFhqQ" id="7kzKH48hiSM" role="3EZMnx" />
         <node concept="3EZMnI" id="7kzKH48hiTi" role="3EZMnx">
@@ -108,6 +124,31 @@
         <node concept="2iRfu4" id="7kzKH48hiPn" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="2OWe1DIUwTS" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4Pv1lEELvTt">
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.rootref" />
+    <ref role="1XX52x" to="45me:4Pv1lEEKXiY" resolve="LoginRef" />
+    <node concept="3EZMnI" id="4Pv1lEELvTv" role="2wV5jI">
+      <node concept="1iCGBv" id="4Pv1lEELvTz" role="3EZMnx">
+        <ref role="1NtTu8" to="45me:4Pv1lEEKXiZ" resolve="login" />
+        <node concept="1sVBvm" id="4Pv1lEELvT_" role="1sWHZn">
+          <node concept="3F0A7n" id="4Pv1lEELvTD" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="45me:7kzKH48hc6m" resolve="type" />
+          </node>
+        </node>
+      </node>
+      <node concept="1iCGBv" id="4Pv1lEELvTG" role="3EZMnx">
+        <ref role="1NtTu8" to="45me:4Pv1lEEKXiZ" resolve="login" />
+        <node concept="1sVBvm" id="4Pv1lEELvTI" role="1sWHZn">
+          <node concept="3F0A7n" id="4Pv1lEELvTM" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="4Pv1lEELvTy" role="2iSdaV" />
     </node>
   </node>
 </model>
