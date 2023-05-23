@@ -10,10 +10,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
-        <child id="1082485599096" name="statements" index="9aQI4" />
-      </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -40,6 +36,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -59,10 +56,14 @@
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1167088157977" name="createRootRule" index="2VS0gm" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
+      </concept>
+      <concept id="1167087469898" name="jetbrains.mps.lang.generator.structure.CreateRootRule" flags="lg" index="2VPoh5">
+        <reference id="1167087469901" name="templateNode" index="2VPoh2" />
       </concept>
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -107,9 +108,8 @@
       <ref role="30HIoZ" to="45me:ktqxccT2fC" resolve="ChatFile" />
       <ref role="3lhOvi" node="7eOdynhFLaO" resolve="map_ChatFile" />
     </node>
-    <node concept="3lhOvk" id="4Pv1lEEMPll" role="3lj3bC">
-      <ref role="30HIoZ" to="45me:2OWe1DIFhTM" resolve="LoginObj" />
-      <ref role="3lhOvi" node="4Pv1lEEMPlm" resolve="map_LoginObj" />
+    <node concept="2VPoh5" id="2LqAYIXBeMY" role="2VS0gm">
+      <ref role="2VPoh2" node="2LqAYIXzISZ" resolve="Login" />
     </node>
   </node>
   <node concept="312cEu" id="7eOdynhFLaO">
@@ -126,30 +126,29 @@
       <node concept="3cqZAl" id="4Pv1lEELSdz" role="3clF45" />
       <node concept="3Tm1VV" id="4Pv1lEELSd$" role="1B3o_S" />
       <node concept="3clFbS" id="4Pv1lEELSd_" role="3clF47">
-        <node concept="9aQIb" id="4Pv1lEELSfs" role="3cqZAp">
-          <node concept="3clFbS" id="4Pv1lEELSft" role="9aQI4" />
-          <node concept="1WS0z7" id="4Pv1lEELSfV" role="lGtFl">
-            <node concept="3JmXsc" id="4Pv1lEELSfY" role="3Jn$fo">
-              <node concept="3clFbS" id="4Pv1lEELSfZ" role="2VODD2">
-                <node concept="3clFbF" id="4Pv1lEELSg5" role="3cqZAp">
-                  <node concept="2OqwBi" id="4Pv1lEELSg0" role="3clFbG">
-                    <node concept="3Tsc0h" id="4Pv1lEELSg3" role="2OqNvi">
+        <node concept="3clFbH" id="2LqAYIXBzkf" role="3cqZAp">
+          <node concept="1WS0z7" id="2LqAYIXBztF" role="lGtFl">
+            <node concept="3JmXsc" id="2LqAYIXBztG" role="3Jn$fo">
+              <node concept="3clFbS" id="2LqAYIXBztH" role="2VODD2">
+                <node concept="3clFbF" id="2LqAYIXBzDd" role="3cqZAp">
+                  <node concept="2OqwBi" id="2LqAYIXBzDe" role="3clFbG">
+                    <node concept="3Tsc0h" id="2LqAYIXBzDf" role="2OqNvi">
                       <ref role="3TtcxE" to="45me:2OWe1DIUx6Y" resolve="logins" />
                     </node>
-                    <node concept="30H73N" id="4Pv1lEELSg4" role="2Oq$k0" />
+                    <node concept="30H73N" id="2LqAYIXBzDg" role="2Oq$k0" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="1W57fq" id="4Pv1lEELSDV" role="lGtFl">
-            <node concept="3IZrLx" id="4Pv1lEELSDW" role="3IZSJc">
-              <node concept="3clFbS" id="4Pv1lEELSDX" role="2VODD2">
-                <node concept="3clFbF" id="4Pv1lEELSG7" role="3cqZAp">
-                  <node concept="2OqwBi" id="4Pv1lEELSZc" role="3clFbG">
-                    <node concept="30H73N" id="4Pv1lEELSG6" role="2Oq$k0" />
-                    <node concept="1mIQ4w" id="4Pv1lEELVg5" role="2OqNvi">
-                      <node concept="chp4Y" id="4Pv1lEELVhV" role="cj9EA">
+          <node concept="1W57fq" id="2LqAYIXB$6u" role="lGtFl">
+            <node concept="3IZrLx" id="2LqAYIXB$6v" role="3IZSJc">
+              <node concept="3clFbS" id="2LqAYIXB$6w" role="2VODD2">
+                <node concept="3clFbF" id="2LqAYIXB$fW" role="3cqZAp">
+                  <node concept="2OqwBi" id="2LqAYIXB$fX" role="3clFbG">
+                    <node concept="30H73N" id="2LqAYIXB$fY" role="2Oq$k0" />
+                    <node concept="1mIQ4w" id="2LqAYIXB$fZ" role="2OqNvi">
+                      <node concept="chp4Y" id="2LqAYIXB$g0" role="cj9EA">
                         <ref role="cht4Q" to="45me:2OWe1DIFhTM" resolve="LoginObj" />
                       </node>
                     </node>
@@ -158,7 +157,7 @@
               </node>
             </node>
           </node>
-          <node concept="29HgVG" id="4Pv1lEELZ3E" role="lGtFl" />
+          <node concept="29HgVG" id="2LqAYIXB$wy" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -167,16 +166,9 @@
       <ref role="n9lRv" to="45me:ktqxccT2fC" resolve="ChatFile" />
     </node>
   </node>
-  <node concept="312cEu" id="4Pv1lEEMPlm">
-    <property role="TrG5h" value="map_LoginObj" />
-    <node concept="2tJIrI" id="4Pv1lEEMPl$" role="jymVt" />
-    <node concept="3Tm1VV" id="4Pv1lEEMPln" role="1B3o_S" />
-    <node concept="n94m4" id="4Pv1lEEMPlo" role="lGtFl">
-      <ref role="n9lRv" to="45me:2OWe1DIFhTM" resolve="LoginObj" />
-    </node>
-  </node>
   <node concept="3HP615" id="2LqAYIXzISZ">
     <property role="TrG5h" value="Login" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage" />
     <node concept="3clFb_" id="2LqAYIXzIYf" role="jymVt">
       <property role="TrG5h" value="login" />
       <node concept="3clFbS" id="2LqAYIXzIYi" role="3clF47" />
