@@ -14,6 +14,7 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -81,11 +82,35 @@
         </node>
         <node concept="VPM3Z" id="2OWe1DIUDDE" role="3F10Kt" />
       </node>
+      <node concept="3F0ifn" id="26LbrsiuH4R" role="3EZMnx">
+        <property role="3F0ifm" value="Triggers:" />
+      </node>
+      <node concept="3EZMnI" id="26LbrsiuH5$" role="3EZMnx">
+        <node concept="VPM3Z" id="26LbrsiuH5A" role="3F10Kt" />
+        <node concept="3XFhqQ" id="26LbrsiuH63" role="3EZMnx" />
+        <node concept="3F2HdR" id="26LbrsiuH69" role="3EZMnx">
+          <ref role="1NtTu8" to="45me:26LbrsiuH4E" resolve="triggers" />
+          <node concept="2EHx9g" id="26LbrsiuH6q" role="2czzBx" />
+        </node>
+        <node concept="2iRfu4" id="26LbrsiuH5D" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="26LbrsitMaf" role="3EZMnx">
+        <property role="3F0ifm" value="Actions:" />
+      </node>
+      <node concept="3EZMnI" id="26LbrsitMaI" role="3EZMnx">
+        <node concept="VPM3Z" id="26LbrsitMaK" role="3F10Kt" />
+        <node concept="3XFhqQ" id="26LbrsitMb6" role="3EZMnx" />
+        <node concept="3F2HdR" id="26LbrsitMbc" role="3EZMnx">
+          <ref role="1NtTu8" to="45me:26LbrsitMa3" resolve="actions" />
+          <node concept="2EHx9g" id="26LbrsiuH6t" role="2czzBx" />
+        </node>
+        <node concept="2iRfu4" id="26LbrsitMaN" role="2iSdaV" />
+      </node>
       <node concept="2iRkQZ" id="ktqxccT3OA" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="2OWe1DIUwTN">
-    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.rootobj" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.objs" />
     <ref role="1XX52x" to="45me:2OWe1DIFhTM" resolve="LoginObj" />
     <node concept="3EZMnI" id="2OWe1DIUwTP" role="2wV5jI">
       <node concept="3EZMnI" id="7kzKH48hiPi" role="3EZMnx">
@@ -127,7 +152,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4Pv1lEELvTt">
-    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.rootref" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.refs" />
     <ref role="1XX52x" to="45me:4Pv1lEEKXiY" resolve="LoginRef" />
     <node concept="3EZMnI" id="4Pv1lEELvTv" role="2wV5jI">
       <node concept="1iCGBv" id="4Pv1lEELvTz" role="3EZMnx">
@@ -149,6 +174,108 @@
         </node>
       </node>
       <node concept="2iRfu4" id="4Pv1lEELvTy" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="26LbrsitUt6">
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.objs.actions.text" />
+    <ref role="1XX52x" to="45me:26LbrsitM6E" resolve="InputAware" />
+    <node concept="3EZMnI" id="26LbrsitUt8" role="2wV5jI">
+      <node concept="3F0A7n" id="26LbrsitUtf" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="26LbrsitUtr" role="3EZMnx">
+        <property role="3F0ifm" value="TODO" />
+      </node>
+      <node concept="2iRfu4" id="26LbrsitUtb" role="2iSdaV" />
+      <node concept="VPM3Z" id="26Lbrsiu40L" role="3F10Kt" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="26LbrsitUtC">
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.objs.actions.text" />
+    <ref role="1XX52x" to="45me:26LbrsitM6l" resolve="StaticText" />
+    <node concept="3EZMnI" id="26LbrsitUtP" role="2wV5jI">
+      <node concept="2iRfu4" id="26LbrsitUtQ" role="2iSdaV" />
+      <node concept="3F0A7n" id="26LbrsitUtT" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="26LbrsitUu2" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0ifn" id="26LbrsitUuf" role="3EZMnx">
+        <property role="3F0ifm" value="reply" />
+      </node>
+      <node concept="3F0A7n" id="26LbrsitUut" role="3EZMnx">
+        <ref role="1NtTu8" to="45me:26LbrsitUum" resolve="reply" />
+      </node>
+      <node concept="VPM3Z" id="26Lbrsiu40A" role="3F10Kt" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="26LbrsiuSKL">
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.objs.triggers" />
+    <ref role="1XX52x" to="45me:26LbrsitM5u" resolve="OnBoot" />
+    <node concept="3EZMnI" id="26LbrsiuSKN" role="2wV5jI">
+      <node concept="3F0ifn" id="26LbrsiuSKW" role="3EZMnx">
+        <property role="3F0ifm" value="On Boot" />
+      </node>
+      <node concept="3F0ifn" id="26LbrsiuSLu" role="3EZMnx">
+        <property role="3F0ifm" value="Then" />
+      </node>
+      <node concept="1iCGBv" id="26LbrsiuVm7" role="3EZMnx">
+        <ref role="1NtTu8" to="45me:26LbrsiuSKA" resolve="action" />
+        <node concept="1sVBvm" id="26LbrsiuVm9" role="1sWHZn">
+          <node concept="1iCGBv" id="26LbrsiuVmL" role="2wV5jI">
+            <ref role="1NtTu8" to="45me:26LbrsiuSMn" resolve="action" />
+            <node concept="1sVBvm" id="26LbrsiuVmN" role="1sWHZn">
+              <node concept="3F0A7n" id="26LbrsiuVmU" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="26LbrsiuSKQ" role="2iSdaV" />
+      <node concept="VPM3Z" id="26LbrsiuSKU" role="3F10Kt" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="26LbrsivtkT">
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.objs.triggers" />
+    <ref role="1XX52x" to="45me:26LbrsitM4U" resolve="OnKeyword" />
+    <node concept="3EZMnI" id="26LbrsivtkV" role="2wV5jI">
+      <node concept="3F0ifn" id="26Lbrsiv$1k" role="3EZMnx">
+        <property role="3F0ifm" value="On Keyword" />
+      </node>
+      <node concept="3F2HdR" id="26Lbrsiv$1q" role="3EZMnx">
+        <property role="2czwfO" value=" and " />
+        <ref role="1NtTu8" to="45me:26Lbrsivzjh" resolve="keywords" />
+        <node concept="2iRfu4" id="26Lbrsiv$1s" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="26Lbrsiv_I3" role="3EZMnx">
+        <property role="3F0ifm" value="=&gt;" />
+      </node>
+      <node concept="1iCGBv" id="26Lbrsiv_I$" role="3EZMnx">
+        <ref role="1NtTu8" to="45me:26Lbrsiv_IM" resolve="action" />
+        <node concept="1sVBvm" id="26Lbrsiv_IA" role="1sWHZn">
+          <node concept="1iCGBv" id="26Lbrsiv_IZ" role="2wV5jI">
+            <ref role="1NtTu8" to="45me:26LbrsiuSMn" resolve="action" />
+            <node concept="1sVBvm" id="26Lbrsiv_J1" role="1sWHZn">
+              <node concept="3F0A7n" id="26Lbrsiv_J8" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="26LbrsivtkY" role="2iSdaV" />
+      <node concept="VPM3Z" id="26Lbrsivtl2" role="3F10Kt" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="26Lbrsivtlw">
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.objs.triggers.onkeyword" />
+    <ref role="1XX52x" to="45me:26Lbrsivtla" resolve="Keyword" />
+    <node concept="3F0A7n" id="26Lbrsivtly" role="2wV5jI">
+      <ref role="1NtTu8" to="45me:26Lbrsivtll" resolve="keyword" />
     </node>
   </node>
 </model>

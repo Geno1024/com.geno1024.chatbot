@@ -168,7 +168,7 @@
     </node>
   </node>
   <node concept="3HP615" id="2LqAYIXzISZ">
-    <property role="TrG5h" value="Login" />
+    <property role="TrG5h" value="ChatBot" />
     <property role="3GE5qa" value="com.geno1024.chatbotlanguage" />
     <property role="2HnT6v" value="com.geno1024.chatbotlanguage.generator.templates" />
     <node concept="3clFb_" id="2LqAYIXzIYf" role="jymVt">

@@ -9,10 +9,10 @@
     <import index="gq9s" ref="r:d642382b-afe5-4a61-8e09-f3963e3b48dc(com.geno1024.chatbotlanguage.mirai.structure)" />
     <import index="4oku" ref="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf/java:net.mamoe.mirai(com.geno1024.chatbotlanguage.qq.runtime/)" />
     <import index="tvyg" ref="r:df76f4e4-c1d1-426b-8b2f-0447d57c7dc0(com.geno1024.chatbotlanguage.generator.templates@generator)" />
-    <import index="45me" ref="r:9515e522-8dbe-447f-9352-ed239871d408(com.geno1024.chatbotlanguage.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="45me" ref="r:9515e522-8dbe-447f-9352-ed239871d408(com.geno1024.chatbotlanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -175,7 +175,7 @@
     </node>
   </node>
   <node concept="312cEu" id="2LqAYIXzTt4">
-    <property role="TrG5h" value="QQLogin" />
+    <property role="TrG5h" value="QQ" />
     <node concept="312cEg" id="2LqAYIXzTJP" role="jymVt">
       <property role="TrG5h" value="username" />
       <node concept="3Tm6S6" id="2LqAYIXzTGz" role="1B3o_S" />
@@ -191,27 +191,6 @@
       <node concept="3Tm6S6" id="2LqAYIX$5tm" role="1B3o_S" />
       <node concept="3uibUv" id="2LqAYIX$5_e" role="1tU5fm">
         <ref role="3uigEE" to="4oku:~Bot" resolve="Bot" />
-      </node>
-      <node concept="17Uvod" id="2LqAYIX$6RX" role="lGtFl">
-        <property role="2qtEX9" value="name" />
-        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-        <node concept="3zFVjK" id="2LqAYIX$6RY" role="3zH0cK">
-          <node concept="3clFbS" id="2LqAYIX$6RZ" role="2VODD2">
-            <node concept="3clFbF" id="2LqAYIX$6TY" role="3cqZAp">
-              <node concept="3cpWs3" id="2LqAYIX$6TZ" role="3clFbG">
-                <node concept="2OqwBi" id="2LqAYIX$6U0" role="3uHU7w">
-                  <node concept="30H73N" id="2LqAYIX$6U1" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="2LqAYIX$6U2" role="2OqNvi">
-                    <ref role="3TsBF5" to="45me:2OWe1DIFhTN" resolve="username" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="2LqAYIX$6U3" role="3uHU7B">
-                  <property role="Xl_RC" value="qqBot" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2LqAYIX$TNv" role="jymVt" />
