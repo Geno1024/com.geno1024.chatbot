@@ -10,8 +10,9 @@
     <import index="4oku" ref="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf/java:net.mamoe.mirai(com.geno1024.chatbotlanguage.qq.runtime/)" />
     <import index="tvyg" ref="r:df76f4e4-c1d1-426b-8b2f-0447d57c7dc0(com.geno1024.chatbotlanguage.generator.templates@generator)" />
     <import index="45me" ref="r:9515e522-8dbe-447f-9352-ed239871d408(com.geno1024.chatbotlanguage.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -236,6 +237,18 @@
             </node>
             <node concept="37vLTw" id="2LqAYIX$7PU" role="37vLTJ">
               <ref role="3cqZAo" node="2LqAYIX$5AI" resolve="bot" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="26LbrsitvvD" role="3cqZAp">
+          <node concept="2OqwBi" id="26LbrsitvvA" role="3clFbG">
+            <node concept="10M0yZ" id="26LbrsitvvB" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" />
+            </node>
+            <node concept="liA8E" id="26LbrsitvvC" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object)" resolve="println" />
+              <node concept="Xjq3P" id="26Lbrsitw7w" role="37wK5m" />
             </node>
           </node>
         </node>

@@ -42,6 +42,7 @@
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="2791683072064593257" name="packageName" index="2HnT6v" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -169,6 +170,7 @@
   <node concept="3HP615" id="2LqAYIXzISZ">
     <property role="TrG5h" value="Login" />
     <property role="3GE5qa" value="com.geno1024.chatbotlanguage" />
+    <property role="2HnT6v" value="com.geno1024.chatbotlanguage.generator.templates" />
     <node concept="3clFb_" id="2LqAYIXzIYf" role="jymVt">
       <property role="TrG5h" value="login" />
       <node concept="3clFbS" id="2LqAYIXzIYi" role="3clF47" />

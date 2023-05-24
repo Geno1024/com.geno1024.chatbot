@@ -111,5 +111,34 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
+  <node concept="1TIwiD" id="26LbrsitH6f">
+    <property role="EcuMT" value="2427771938441449871" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.rootobj" />
+    <property role="TrG5h" value="TriggerObj" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="26LbrsitH6_" resolve="Trigger" />
+    <node concept="PrWs8" id="26LbrsitH6g" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="26LbrsitH6_">
+    <property role="EcuMT" value="2427771938441449893" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage" />
+    <property role="TrG5h" value="Trigger" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
+  <node concept="1TIwiD" id="26LbrsitH6U">
+    <property role="EcuMT" value="2427771938441449914" />
+    <property role="3GE5qa" value="com.geno1024.chatbotlanguage.rootref" />
+    <property role="TrG5h" value="TriggerRef" />
+    <ref role="1TJDcQ" node="26LbrsitH6_" resolve="Trigger" />
+    <node concept="1TJgyj" id="26LbrsitH7v" role="1TKVEi">
+      <property role="IQ2ns" value="2427771938441449951" />
+      <property role="20kJfa" value="trigger" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="26LbrsitH6f" resolve="TriggerObj" />
+    </node>
+  </node>
 </model>
 
