@@ -22,6 +22,13 @@
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
+      <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ" />
+      <concept id="1109279851642" name="jetbrains.mps.baseLanguage.structure.GenericDeclaration" flags="ng" index="16eOlS">
+        <child id="1109279881614" name="typeVariableDeclaration" index="16eVyc" />
+      </concept>
+      <concept id="1109283449304" name="jetbrains.mps.baseLanguage.structure.TypeVariableReference" flags="in" index="16syzq">
+        <reference id="1109283546497" name="typeVariableDeclaration" index="16sUi3" />
+      </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -171,16 +178,48 @@
     <property role="TrG5h" value="ChatBot" />
     <property role="3GE5qa" value="com.geno1024.chatbotlanguage" />
     <property role="2HnT6v" value="com.geno1024.chatbotlanguage.generator.templates" />
-    <node concept="3clFb_" id="2LqAYIXzIYf" role="jymVt">
+    <node concept="3clFb_" id="6WJajw1G4SY" role="jymVt">
       <property role="TrG5h" value="login" />
-      <node concept="3clFbS" id="2LqAYIXzIYi" role="3clF47" />
-      <node concept="3Tm1VV" id="2LqAYIXzIYj" role="1B3o_S" />
-      <node concept="3uibUv" id="2LqAYIXzIXC" role="3clF45">
-        <ref role="3uigEE" node="2LqAYIXzISZ" resolve="Login" />
+      <node concept="3clFbS" id="6WJajw1G4T1" role="3clF47" />
+      <node concept="3Tm1VV" id="6WJajw1G4T2" role="1B3o_S" />
+      <node concept="3uibUv" id="6WJajw1G4RV" role="3clF45">
+        <ref role="3uigEE" node="2LqAYIXzISZ" resolve="ChatBot" />
+      </node>
+      <node concept="37vLTG" id="6WJajw1G4UG" role="3clF46">
+        <property role="TrG5h" value="user" />
+        <node concept="16syzq" id="6WJajw1G4UF" role="1tU5fm">
+          <ref role="16sUi3" node="6WJajw1G4PZ" resolve="UserIdType" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6WJajw1G4WG" role="3clF46">
+        <property role="TrG5h" value="password" />
+        <node concept="17QB3L" id="6WJajw1G4Y7" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6WJajw1FOuL" role="jymVt">
+      <property role="TrG5h" value="sendTextToGroup" />
+      <node concept="3clFbS" id="6WJajw1FOuO" role="3clF47" />
+      <node concept="3Tm1VV" id="6WJajw1FOuP" role="1B3o_S" />
+      <node concept="3cqZAl" id="6WJajw1FOug" role="3clF45" />
+      <node concept="37vLTG" id="6WJajw1FQu5" role="3clF46">
+        <property role="TrG5h" value="groupId" />
+        <node concept="16syzq" id="6WJajw1FQ$b" role="1tU5fm">
+          <ref role="16sUi3" node="6WJajw1FQyv" resolve="GroupIdType" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6WJajw1FOwp" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="6WJajw1FOwo" role="1tU5fm" />
       </node>
     </node>
     <node concept="3Tm1VV" id="2LqAYIXzIT0" role="1B3o_S" />
     <node concept="n94m4" id="2LqAYIXzIT1" role="lGtFl" />
+    <node concept="16euLQ" id="6WJajw1G4PZ" role="16eVyc">
+      <property role="TrG5h" value="UserIdType" />
+    </node>
+    <node concept="16euLQ" id="6WJajw1FQyv" role="16eVyc">
+      <property role="TrG5h" value="GroupIdType" />
+    </node>
   </node>
 </model>
 
