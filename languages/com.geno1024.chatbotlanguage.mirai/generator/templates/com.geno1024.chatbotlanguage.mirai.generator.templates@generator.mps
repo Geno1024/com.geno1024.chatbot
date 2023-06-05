@@ -9,9 +9,9 @@
     <import index="gq9s" ref="r:d642382b-afe5-4a61-8e09-f3963e3b48dc(com.geno1024.chatbotlanguage.mirai.structure)" />
     <import index="4oku" ref="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf/java:net.mamoe.mirai(com.geno1024.chatbotlanguage.mirai.runtime/)" />
     <import index="tvyg" ref="r:df76f4e4-c1d1-426b-8b2f-0447d57c7dc0(com.geno1024.chatbotlanguage.generator.templates@generator)" />
+    <import index="ztls" ref="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf/java:net.mamoe.mirai.contact(com.geno1024.chatbotlanguage.mirai.runtime/)" />
+    <import index="6cs1" ref="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf/java:net.mamoe.mirai.utils(com.geno1024.chatbotlanguage.mirai.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
-    <import index="ztls" ref="b7cb73b2-bbd8-4833-a953-ee292cb1a8cf/java:net.mamoe.mirai.contact(com.geno1024.chatbotlanguage.mirai.runtime/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="45me" ref="r:9515e522-8dbe-447f-9352-ed239871d408(com.geno1024.chatbotlanguage.structure)" implicit="true" />
   </imports>
@@ -209,15 +209,13 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="26LbrsitvvD" role="3cqZAp">
-          <node concept="2OqwBi" id="26LbrsitvvA" role="3clFbG">
-            <node concept="10M0yZ" id="26LbrsitvvB" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" />
+        <node concept="3clFbF" id="2$5GaABsPqu" role="3cqZAp">
+          <node concept="2OqwBi" id="2$5GaABsPVa" role="3clFbG">
+            <node concept="37vLTw" id="2$5GaABsPqs" role="2Oq$k0">
+              <ref role="3cqZAo" node="2LqAYIX$5AI" resolve="bot" />
             </node>
-            <node concept="liA8E" id="26LbrsitvvC" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.Object)" resolve="println" />
-              <node concept="Xjq3P" id="26Lbrsitw7w" role="37wK5m" />
+            <node concept="liA8E" id="2$5GaABsQS$" role="2OqNvi">
+              <ref role="37wK5l" to="4oku:~Bot.login()" resolve="login" />
             </node>
           </node>
         </node>
@@ -392,6 +390,23 @@
           </node>
         </node>
         <node concept="raruj" id="2LqAYIXCnYt" role="lGtFl" />
+      </node>
+      <node concept="3clFbF" id="2$5GaABpkib" role="3cqZAp">
+        <node concept="2OqwBi" id="2$5GaABpkIY" role="3clFbG">
+          <node concept="37vLTw" id="2$5GaABpki9" role="2Oq$k0">
+            <ref role="3cqZAo" node="2LqAYIXC1UJ" resolve="login" />
+          </node>
+          <node concept="liA8E" id="2$5GaABplfE" role="2OqNvi">
+            <ref role="37wK5l" node="6WJajw1FPgX" resolve="sendTextToGroup" />
+            <node concept="1adDum" id="2$5GaABqbPj" role="37wK5m">
+              <property role="1adDun" value="734549470L" />
+            </node>
+            <node concept="Xl_RD" id="2$5GaABpmlr" role="37wK5m">
+              <property role="Xl_RC" value="a" />
+            </node>
+          </node>
+        </node>
+        <node concept="raruj" id="2$5GaABpWEz" role="lGtFl" />
       </node>
     </node>
   </node>
