@@ -4,7 +4,10 @@
     <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/../../libs/mirai-core-all-2.15.0-M1-all.jar!/">
+    <modelRoot type="java_classes" contentPath="${module}/../../libs/mirai-core-api-jvm-2.15.0-dev-98.jar!/">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot type="java_classes" contentPath="${module}/../../libs/mirai-core-jvm-2.15.0-dev-98.jar!/">
       <sourceRoot location="." />
     </modelRoot>
   </models>
